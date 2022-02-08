@@ -13,7 +13,7 @@ public class App {
         Injector injector = Guice.createInjector(new DrawSquareModule());
         DrawShape drawSquare = injector.getInstance(DrawSquare.class);
 
-        DrawSquareRequest request = new DrawSquareRequest(drawSquare);
-        request.drawSquare.draw();
+        DrawSquare square = new DrawSquare(drawSquare);
+        square.draw();
     }
 }
