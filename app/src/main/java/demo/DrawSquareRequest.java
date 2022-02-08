@@ -7,8 +7,8 @@ public class DrawSquareRequest {
     @Inject
     public DrawShape drawSquare;
 
-    public DrawSquareRequest(DrawShape shape) {
-        this.drawSquare = shape;
-    }
+    // public DrawSquareRequest(DrawShape shape) {
+    // this.drawSquare = shape;
+    // }
 
 }

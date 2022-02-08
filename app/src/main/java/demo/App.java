@@ -11,9 +11,9 @@ public class App {
     public static void main(String[] args) {
 
         Injector injector = Guice.createInjector(new DrawSquareModule());
-        DrawShape drawSquare = injector.getInstance(DrawSquare.class);
+        DrawSquareRequest request = injector.getInstance(DrawSquareRequest.class);
 
-        DrawSquareRequest request = new DrawSquareRequest(drawSquare);
+        // DrawSquareRequest request = new DrawSquareRequest(drawSquare);
         request.drawSquare.draw();
     }
 }
